@@ -1,0 +1,47 @@
+offset: 50
+volume: 550
+opinions:
+  start:
+    - 1
+    - 45
+    - 81
+    - 124
+    - 192
+    - 233
+    - 286
+    - 297
+    - 330
+    - 372
+    - 398
+    - 429
+    - 437
+    - 465
+    - 501
+    - 511
+    - 516
+    - 544
+    - 598
+    - 609
+    - 618
+  last: 661
+orders:
+  start: 713
+  end: 793
+rules:
+  bankruptcy:
+    start: 798
+    end: 810
+  civil procedure:
+    start: 811
+    end: 971
+  appellate procedure:
+    start: 794
+    end: 987
+  criminal procedure:
+    start: 972
+    end: 979
+reporters note: 980
+chambers:
+  Boumediene:
+    start: 981
+    end: 982
