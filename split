@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+require 'yaml'
+
+data = YAML.load_file(ARGV[0])
+base = File.basename(ARGV[0], '.yml')
+pdf = "#{base}.pdf"
+
+offset = data['offset']
+
+`mkdir -p #{base}`
+
+starts = data['opinions']['start']
+
+starts.each_with_index do |start, index|
+  last = if index === starts.size - 1
+           data['opinions']['last']
+         else
+           starts[index + 1] - 1
+         end
+  `pdftk #{pdf} cat #{offset + start}-#{offset + last} output #{base}/#{index + 1}.pdf`
+end
+
+data['chambers'].each do |key, value|
+  `pdftk #{pdf} cat #{value['start']}-#{value['end']} output #{base}/chambers-#{key}.pdf`
+end
