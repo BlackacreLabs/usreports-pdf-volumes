@@ -1,0 +1,48 @@
+offset: 78
+volume: 563
+opinions:
+  start:
+    - 1
+    - 27
+    - 51
+    - 110
+    - 123
+    - 125
+    - 170
+    - 247
+    - 277
+    - 307
+    - 333
+    - 368
+    - 401
+    - 421
+    - 452
+    - 478
+    - 493
+    - 582
+    - 647
+    - 668
+    - 692
+    - 731
+    - 754
+    - 776
+    - 804
+    - 816
+    - 826
+  last: 841
+orders:
+  start: 921
+  end: 1043
+rules:
+  appellate procedure:
+    start: 1064
+    end: 1068
+  bankruptcy procedure:
+    start: 1069
+    end: 1079
+  criminal procedure:
+    start: 1080
+    end: 1090
+  evidence:
+    start: 1091
+    end: 1131
